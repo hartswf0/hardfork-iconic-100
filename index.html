@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Tech Timeline</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body { 
+            font-family: 'Courier New', monospace; 
+            background: #000; 
+            color: #0F0; 
+            margin: 0; 
+            padding: 10px; 
+            line-height: 1.6;
+            overflow-x: hidden; 
+        }
+        #timeline-container {
+            width: 100%; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        #controls {
+            display: flex;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        #search, #group-filter {
+            background: black;
+            color: green;
+            border: 1px solid green;
+            padding: 5px;
+            flex-grow: 1;
+        }
+        .item { 
+            border: 1px solid #0F0; 
+            margin: 10px 0; 
+            padding: 10px; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .item:hover { 
+            background: rgba(0,255,0,0.1); 
+            transform: scale(1.02);
+        }
+        .item-name {
+            color: #0FF;
+            font-weight: bold;
+        }
+        .item-date {
+            color: #FF0;
+        }
+        .item-group {
+            color: #F0F;
+        }
+        #loading {
+            text-align: center;
+            padding: 20px;
+            color: #0F0;
+        }
+        @media (max-width: 600px) {
+            #controls {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="timeline-container">
+        <div id="controls">
+            <input type="text" id="search" placeholder="SEARCH TECHNOLOGIES [press enter]">
+            <select id="group-filter">
+                <option value="">ALL GROUPS</option>
+            </select>
+        </div>
+        <div id="loading">LOADING TECHNOLOGIES...</div>
+        <div id="timeline"></div>
+    </div>
+
+    <script>
+        const technologies = [
+            {"name": "Boats","date": "10,000 BC","group": "Transportation"},
+            {"name": "Calculators","date": "1960s","group": "Computing"},
+            {"name": "NFTs","date": "2014","group": "Digital"},
+            {"name": "Oregon Trail (Video Game)","date": "1971","group": "Entertainment"},
+            {"name": "Spinning Jenny","date": "1764","group": "Manufacturing"},
+            {"name": "Radio","date": "1890s","group": "Communication"},
+            {"name": "Vine","date": "2013","group": "Entertainment"},
+            {"name": "KitchenAid Stand Mixer","date": "1919","group": "Domestic"},
+            {"name": "Barcodes","date": "1952","group": "Commerce"},
+            {"name": "Drones","date": "1907","group": "Various"},
+            {"name": "Nintendo DS","date": "2004","group": "Entertainment"},
+            {"name": "Zoom","date": "2011","group": "Communication"},
+            {"name": "Sundial","date": "3500 BC","group": "Timekeeping"},
+            {"name": "Haber-Bosch Process","date": "1909","group": "Agriculture"},
+            {"name": "Linux","date": "1991","group": "Computing"},
+            {"name": "Podcasts","date": "2004","group": "Entertainment"},
+            {"name": "Fracking","date": "1947","group": "Energy"},
+            {"name": "Fonts","date": "1440s","group": "Digital"},
+            {"name": "Patreon","date": "2013","group": "Digital"},
+            {"name": "Concrete","date": "1824","group": "Construction"},
+            {"name": "Juul","date": "2015","group": "Health"},
+            {"name": "Anesthesia","date": "1846","group": "Health"},
+            {"name": "Netflix","date": "1997","group": "Entertainment"},
+            {"name": "Screws","date": "1st Century AD","group": "Construction"},
+            {"name": "Seatbelts","date": "1959","group": "Safety"},
+            {"name": "Disposable Diapers","date": "1940s","group": "Domestic"},
+            {"name": "Amazon Prime","date": "2005","group": "Commerce"},
+            {"name": "Microsoft Excel","date": "1985","group": "Computing"},
+            {"name": "Roads","date": "3000 BC","group": "Transportation"},
+            {"name": "Databases","date": "1960s","group": "Computing"},
+            {"name": "Insulin","date": "1922","group": "Health"},
+            {"name": "OnlyFans","date": "2016","group": "Digital"},
+            {"name": "Dolby Surround Sound","date": "1975","group": "Entertainment"},
+            {"name": "Doom (Video Game)","date": "1993","group": "Entertainment"},
+            {"name": "Ibuprofen","date": "1961","group": "Health"},
+            {"name": "Compass","date": "11th Century","group": "Navigation"},
+            {"name": "AOL Instant Messenger","date": "1997","group": "Communication"},
+            {"name": "GPS","date": "1973","group": "Navigation"},
+            {"name": "Compound Interest","date": "17th Century","group": "Finance"},
+            {"name": "Facebook News Feed","date": "2006","group": "Digital"},
+            {"name": "Dolly the Sheep","date": "1996","group": "Biotechnology"},
+            {"name": "Tesla","date": "2003","group": "Transportation"},
+            {"name": "Tumblr","date": "2007","group": "Digital"},
+            {"name": "Lever","date": "3rd Century BC","group": "Simple Machines"},
+            {"name": "Bitcoin","date": "2009","group": "Finance"},
+            {"name": "Motorola Razr","date": "2004","group": "Communication"},
+            {"name": "Gunpowder","date": "9th Century","group": "Military"},
+            {"name": "Snapchat","date": "2011","group": "Communication"},
+            {"name": "Condoms","date": "16th Century","group": "Health"},
+            {"name": "eBay","date": "1995","group": "Commerce"},
+            {"name": "Corrective Lenses","date": "13th Century","group": "Health"},
+            {"name": "Slack","date": "2013","group": "Communication"},
+            {"name": "IVF","date": "1978","group": "Health"},
+            {"name": "Shipping Containers","date": "1956","group": "Transportation"},
+            {"name": "TikTok","date": "2016","group": "Entertainment"},
+            {"name": "Light Bulb","date": "1879","group": "Domestic"},
+            {"name": "Microscopes","date": "1590s","group": "Science"},
+            {"name": "Washing Machines","date": "1797","group": "Domestic"},
+            {"name": "Elevators","date": "1852","group": "Construction"},
+            {"name": "Twitter","date": "2006","group": "Communication"},
+            {"name": "Refrigerator","date": "1748","group": "Domestic"},
+            {"name": "iMac","date": "1998","group": "Computing"},
+            {"name": "Napster","date": "1999","group": "Entertainment"},
+            {"name": "Money","date": "600 BC","group": "Finance"},
+            {"name": "Cotton Gin","date": "1793","group": "Agriculture"},
+            {"name": "Uber","date": "2009","group": "Transportation"},
+            {"name": "Fulcrum","date": "3rd Century BC","group": "Simple Machines"},
+            {"name": "Vaccines","date": "1796","group": "Health"},
+            {"name": "MySpace","date": "2003","group": "Digital"},
+            {"name": "AlphaFold","date": "2018","group": "Biotechnology"},
+            {"name": "Ozempic","date": "2012","group": "Health"},
+            {"name": "Agriculture","date": "10,000 BC","group": "Agriculture"},
+            {"name": "Walkman","date": "1979","group": "Entertainment"},
+            {"name": "Cuneiform","date": "3200 BC","group": "Communication"},
+            {"name": "Spaceships","date": "1957","group": "Transportation"},
+            {"name": "CRISPR","date": "2012","group": "Biotechnology"},
+            {"name": "Combustion Engine","date": "1876","group": "Transportation"},
+            {"name": "Aqueducts","date": "7th Century BC","group": "Construction"},
+            {"name": "Grindr","date": "2009","group": "Digital"},
+            {"name": "Telephone","date": "1876","group": "Communication"},
+            {"name": "Semiconductors","date": "1947","group": "Computing"},
+            {"name": "Wheel","date": "3500 BC","group": "Simple Machines"},
+            {"name": "Waymo","date": "2009","group": "Transportation"},
+            {"name": "Indoor Plumbing","date": "1800s","group": "Domestic"},
+            {"name": "WiFi","date": "1997","group": "Communication"},
+            {"name": "LSD","date": "1938","group": "Health"},
+            {"name": "World Wide Web","date": "1989","group": "Communication"},
+            {"name": "Batteries","date": "1800","group": "Energy"},
+            {"name": "The Pill","date": "1960","group": "Health"},
+            {"name": "Email","date": "1971","group": "Communication"},
+            {"name": "Transformers (AI)","date": "2017","group": "Computing"},
+            {"name": "Atomic Bomb","date": "1945","group": "Military"},
+            {"name": "YouTube","date": "2005","group": "Entertainment"},
+            {"name": "Airplanes","date": "1903","group": "Transportation"},
+            {"name": "Television","date": "1927","group": "Entertainment"},
+            {"name": "Penicillin","date": "1928","group": "Health"},
+            {"name": "Printing Press","date": "1440","group": "Communication"},
+            {"name": "iPhone","date": "2007","group": "Communication"},
+            {"name": "Electricity","date": "1800s","group": "Energy"},
+            {"name": "Fire","date": "1,000,000 BC","group": "Foundational"}
+        ];
+
+        // Enhanced date parsing function
+        function parseDate(dateStr) {
+            const cleanDate = dateStr.replace(/,/g, '').replace(/\s*BC/g, '');
+            
+            // Handle special cases
+            if (cleanDate.includes('Century')) {
+                const century = parseInt(cleanDate.split(' ')[0]);
+                return century * 100 - 50;  // Middle of the century
+            }
+            
+            if (cleanDate.includes('s')) {
+                const decade = parseInt(cleanDate.replace('s', ''));
+                return decade + 5;  // Middle of the decade
+            }
+            
+            // Try parsing as a year or BC date
+            const numericValue = parseInt(cleanDate);
+            return numericValue < 0 ? numericValue : (numericValue || 0);
+        }
+
+        // Setup DOM elements
+        const timeline = document.getElementById('timeline');
+        const searchInput = document.getElementById('search');
+        const groupFilter = document.getElementById('group-filter');
+        const loadingIndicator = document.getElementById('loading');
+
+        // Populate group filter
+        const groups = [...new Set(technologies.map(tech => tech.group))].sort();
+        groups.forEach(group => {
+            const option = document.createElement('option');
+            option.value = group;
+            option.textContent = group.toUpperCase();
+            groupFilter.appendChild(option);
+        });
+
+        // Render technologies
+        function renderTechnologies(filteredTechs) {
+            timeline.innerHTML = '';
+            loadingIndicator.style.display = 'none';
+
+            filteredTechs.forEach(tech => {
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.innerHTML = `
+                    <div class="item-name">[${tech.name}]</div>
+                    <div class="item-date">DATE: ${tech.date}</div>
+                    <div class="item-group">GROUP: ${tech.group.toUpperCase()}</div>
+                `;
+                timeline.appendChild(item);
+            });
+        }
+
+        // Filter technologies
+        function filterTechnologies() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedGroup = groupFilter.value;
+
+            const filteredTechs = technologies.filter(tech => 
+                (tech.name.toLowerCase().includes(searchTerm) || 
+                 tech.group.toLowerCase().includes(searchTerm)) &&
+                (selectedGroup === '' || tech.group === selectedGroup)
+            ).sort((a, b) => parseDate(a.date) - parseDate(b.date));
+
+            renderTechnologies(filteredTechs);
+        }
+
+        // Event Listeners
+        searchInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') filterTechnologies();
+        });
+        groupFilter.addEventListener('change', filterTechnologies);
+
+        // Initial render
+        document.addEventListener('DOMContentLoaded', () => {
+            const sortedTechs = technologies.sort((a, b) => parseDate(a.date) - parseDate(b.date));
+            renderTechnologies(sortedTechs);
+        });
+    </script>
+</body>
+</html>
