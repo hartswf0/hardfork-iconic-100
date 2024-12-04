@@ -1,0 +1,1607 @@
+[
+  {
+    "title": "Fire",
+    "date": "1,000,000 BC",
+    "group": "Foundational",
+    "inventor": "Early humans",
+    "don_ihde_categories": "Background Relations, Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Fire) → Environmental Control",
+        "olog_diagram": "```\n[Human] ---(harnesses)---> [Fire]\n   |\n(controls)\n   v\n[Environment]\n```",
+        "situation": "Fire provides heat and cooking without active focus."
+      },
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Torch) → Light Extension",
+        "olog_diagram": "```\n[Human] ---(uses)---> [Torch]\n   |\n(extends)\n   v\n[Vision in Darkness]\n```",
+        "situation": "A traveler uses a torch to see in darkness."
+      }
+    ]
+  },
+  {
+    "title": "Boats",
+    "date": "10,000 BC",
+    "group": "Transportation",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Boat) → Navigation",
+        "olog_diagram": "```\n[Person] ---(uses)---> [Boat]\n   |\n(enables)\n   v\n[Navigation]\n```",
+        "situation": "A sailor uses a boat to navigate the sea."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Boat) → World",
+        "olog_diagram": "```\n[Boat] ---(enables)---> [Trade]\n   |\n(shapes)\n   v\n[Societies]\n```",
+        "situation": "Boats facilitate trade, shaping societies unobtrusively."
+      }
+    ]
+  },
+  {
+    "title": "Agriculture",
+    "date": "10,000 BC",
+    "group": "Agriculture",
+    "inventor": "Various early civilizations",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Agriculture) → Societal Development",
+        "olog_diagram": "```\n[Human] ---(practices)---> [Agriculture]\n   |\n(sustains)\n   v\n[Communities]\n```",
+        "situation": "Farming practices sustain communities silently."
+      }
+    ]
+  },
+  {
+    "title": "Sundial",
+    "date": "3500 BC",
+    "group": "Timekeeping",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Sundial Shadow) → Time Interpretation",
+        "olog_diagram": "```\n[User] ---(reads)---> [Shadow Position]\n   |\n(determines)\n   v\n[Time]\n```",
+        "situation": "User reads shadow positions to tell time."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Sundial) → Solar Influence",
+        "olog_diagram": "```\n[Sundial] ---(operates with)---> [Sunlight]\n```",
+        "situation": "Sundial operates with sunlight, unnoticed unless needed."
+      }
+    ]
+  },
+  {
+    "title": "Wheel",
+    "date": "3500 BC",
+    "group": "Simple Machines",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Wheel) → Enhanced Mobility",
+        "olog_diagram": "```\n[Traveler] ---(uses)---> [Wheel]\n   |\n(facilitates)\n   v\n[Transportation]\n```",
+        "situation": "Traveler uses wheel-based vehicle for transportation."
+      }
+    ]
+  },
+  {
+    "title": "Cuneiform",
+    "date": "3200 BC",
+    "group": "Communication",
+    "inventor": "Sumerian civilization",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Cuneiform Symbols) → Information Conveyance",
+        "olog_diagram": "```\n[Scribe] ---(records)---> [Cuneiform Symbols]\n   |\n(conveys)\n   v\n[Information]\n```",
+        "situation": "Scribe records transactions using cuneiform."
+      }
+    ]
+  },
+  {
+    "title": "Roads",
+    "date": "3000 BC",
+    "group": "Transportation",
+    "inventor": "Various ancient civilizations",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Roads) → Transportation Networks",
+        "olog_diagram": "```\n[Roads] ---(enable)---> [Vehicle Movement]\n```",
+        "situation": "Roads enable vehicle movement without active consideration."
+      }
+    ]
+  },
+  {
+    "title": "Aqueducts",
+    "date": "7th Century BC",
+    "group": "Construction",
+    "inventor": "Romans",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Aqueducts) → Water Supply",
+        "olog_diagram": "```\n[Aqueducts] ---(transport)---> [Water]\n   |\n(to)\n   v\n[Cities]\n```",
+        "situation": "Aqueducts transport water to cities silently."
+      }
+    ]
+  },
+  {
+    "title": "Money",
+    "date": "600 BC",
+    "group": "Finance",
+    "inventor": "Various ancient civilizations",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Money Symbols) → Value Interpretation",
+        "olog_diagram": "```\n[Trader] ---(uses)---> [Money]\n   |\n(facilitates)\n   v\n[Exchange]\n```",
+        "situation": "Trader uses money to facilitate exchange based on perceived value."
+      }
+    ]
+  },
+  {
+    "title": "Fulcrum",
+    "date": "3rd Century BC",
+    "group": "Simple Machines",
+    "inventor": "Archimedes (attributed)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Fulcrum) → Lever Function",
+        "olog_diagram": "```\n[Worker] ---(uses)---> [Fulcrum]\n   |\n(enables)\n   v\n[Lifting Heavy Objects]\n```",
+        "situation": "Worker uses fulcrum to lift heavy objects with a lever."
+      }
+    ]
+  },
+  {
+    "title": "Lever",
+    "date": "3rd Century BC",
+    "group": "Simple Machines",
+    "inventor": "Archimedes (attributed)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Lever) → Force Amplification",
+        "olog_diagram": "```\n[Worker] ---(uses)---> [Lever]\n   |\n(amplifies)\n   v\n[Force]\n```",
+        "situation": "Worker uses lever to lift heavy objects."
+      }
+    ]
+  },
+  {
+    "title": "Gunpowder",
+    "date": "9th Century",
+    "group": "Military",
+    "inventor": "Chinese inventors",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Gunpowder) → Warfare Evolution",
+        "olog_diagram": "```\n[Gunpowder] ---(changes)---> [Military Tactics]\n```",
+        "situation": "Gunpowder changes military tactics without direct user focus."
+      }
+    ]
+  },
+  {
+    "title": "Compass",
+    "date": "11th Century",
+    "group": "Navigation",
+    "inventor": "Chinese inventors",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Compass Reading) → Direction Interpretation",
+        "olog_diagram": "```\n[Navigator] ---(uses)---> [Compass]\n   |\n(determines)\n   v\n[Direction]\n```",
+        "situation": "Navigator uses compass to determine travel direction."
+      }
+    ]
+  },
+  {
+    "title": "Condoms",
+    "date": "16th Century",
+    "group": "Health",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Condom) → Protected Interaction",
+        "olog_diagram": "```\n[Individuals] ---(use)---> [Condom]\n   |\n(for)\n   v\n[Safety]\n```",
+        "situation": "Individuals use condoms during intercourse for safety."
+      }
+    ]
+  },
+  {
+    "title": "Compound Interest",
+    "date": "17th Century",
+    "group": "Finance",
+    "inventor": "Jacob Bernoulli",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Interest Calculations) → Financial Growth",
+        "olog_diagram": "```\n[Investor] ---(calculates)---> [Compound Interest]\n   |\n(plans)\n   v\n[Investments]\n```",
+        "situation": "Investor interprets compound interest for investment planning."
+      }
+    ]
+  },
+  {
+    "title": "Refrigerator",
+    "date": "1748",
+    "group": "Domestic",
+    "inventor": "William Cullen (concept), others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Refrigerator) → Food Preservation",
+        "olog_diagram": "```\n[Refrigerator] ---(preserves)---> [Food]\n```",
+        "situation": "Refrigerator keeps food fresh without active management."
+      }
+    ]
+  },
+  {
+    "title": "Spinning Jenny",
+    "date": "1764",
+    "group": "Manufacturing",
+    "inventor": "James Hargreaves",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Spinning Jenny) → World",
+        "olog_diagram": "```\n[Worker] ---(operates)---> [Spinning Jenny]\n   |\n(produces)\n   v\n[Textiles]\n```",
+        "situation": "Worker operates the spinning machinery."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Spinning Jenny) → Industrial Production",
+        "olog_diagram": "```\n[Spinning Jenny] ---(enhances)---> [Industrial Production]\n```",
+        "situation": "Spinning Jenny boosts textile production silently."
+      }
+    ]
+  },
+  {
+    "title": "Cotton Gin",
+    "date": "1793",
+    "group": "Agriculture",
+    "inventor": "Eli Whitney",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Cotton Gin) → Cotton Processing",
+        "olog_diagram": "```\n[Cotton Gin] ---(separates)---> [Seeds from Fibers]\n```",
+        "situation": "Machine separates seeds from cotton fibers efficiently."
+      }
+    ]
+  },
+  {
+    "title": "Vaccines",
+    "date": "1796",
+    "group": "Health",
+    "inventor": "Edward Jenner",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Vaccine) → Immunity",
+        "olog_diagram": "```\n[Individual] ---(receives)---> [Vaccine]\n   |\n(builds)\n   v\n[Immunity]\n```",
+        "situation": "Individual receives vaccine to build resistance against disease."
+      }
+    ]
+  },
+  {
+    "title": "Washing Machines",
+    "date": "1797",
+    "group": "Domestic",
+    "inventor": "Elias Howe, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Washing Machine) → Laundry Automation",
+        "olog_diagram": "```\n[Washing Machine] ---(automates)---> [Clothes Washing]\n```",
+        "situation": "Machine washes clothes without user involvement."
+      }
+    ]
+  },
+  {
+    "title": "Batteries",
+    "date": "1800",
+    "group": "Energy",
+    "inventor": "Alessandro Volta",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Battery) → Portable Power",
+        "olog_diagram": "```\n[Battery] ---(powers)---> [Devices]\n```",
+        "situation": "Battery powers devices without user awareness."
+      }
+    ]
+  },
+  {
+    "title": "Indoor Plumbing",
+    "date": "1800s",
+    "group": "Domestic",
+    "inventor": "Various",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Plumbing) → Sanitation Services",
+        "olog_diagram": "```\n[Plumbing] ---(provides)---> [Water Supply and Waste Removal]\n```",
+        "situation": "Plumbing provides clean water and waste management silently."
+      }
+    ]
+  },
+  {
+    "title": "Electricity",
+    "date": "1800s",
+    "group": "Energy",
+    "inventor": "Various (e.g., Michael Faraday)",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Electricity) → Powered Infrastructure",
+        "olog_diagram": "```\n[Electricity] ---(powers)---> [Homes and Industries]\n```",
+        "situation": "Electricity powers homes and industries unnoticed."
+      }
+    ]
+  },
+  {
+    "title": "Concrete",
+    "date": "1824",
+    "group": "Construction",
+    "inventor": "Joseph Aspdin",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Concrete) → Built Environment",
+        "olog_diagram": "```\n[Concrete] ---(forms)---> [Infrastructure]\n```",
+        "situation": "Concrete structures form infrastructure unnoticed in daily life."
+      }
+    ]
+  },
+  {
+    "title": "Anesthesia",
+    "date": "1846",
+    "group": "Health",
+    "inventor": "William T.G. Morton",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Anesthesia) → Medical Procedures",
+        "olog_diagram": "```\n[Patient] ---(undergoes)---> [Anesthesia]\n   |\n(facilitates)\n   v\n[Surgery]\n```",
+        "situation": "Patient undergoes surgery without conscious pain."
+      }
+    ]
+  },
+  {
+    "title": "Elevators",
+    "date": "1852",
+    "group": "Construction",
+    "inventor": "Elisha Otis",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Elevator) → Vertical Transport",
+        "olog_diagram": "```\n[Elevator] ---(enables)---> [Vertical Movement]\n```",
+        "situation": "Elevators move people between building floors unnoticed."
+      }
+    ]
+  },
+  {
+    "title": "Telephone",
+    "date": "1876",
+    "group": "Communication",
+    "inventor": "Alexander Graham Bell",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Telephone) → Voice Communication",
+        "olog_diagram": "```\n[Caller] ---(speaks into)---> [Telephone]\n   |\n(extends)\n   v\n[Voice Reach]\n```",
+        "situation": "Caller speaks into telephone, extending voice reach."
+      }
+    ]
+  },
+  {
+    "title": "Combustion Engine",
+    "date": "1876",
+    "group": "Transportation",
+    "inventor": "Nikolaus Otto",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Combustion Engine) → Powered Vehicles",
+        "olog_diagram": "```\n[Combustion Engine] ---(powers)---> [Vehicles]\n```",
+        "situation": "Engines drive cars and machinery without user focus."
+      }
+    ]
+  },
+  {
+    "title": "Light Bulb",
+    "date": "1879",
+    "group": "Domestic",
+    "inventor": "Thomas Edison, Joseph Swan",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Light Bulb) → Illuminated Environment",
+        "olog_diagram": "```\n[Light Bulb] ---(provides)---> [Illumination]\n```",
+        "situation": "Light bulbs illuminate spaces without active attention."
+      }
+    ]
+  },
+  {
+    "title": "Penicillin",
+    "date": "1928",
+    "group": "Health",
+    "inventor": "Alexander Fleming",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Penicillin) → Infection Treatment",
+        "olog_diagram": "```\n[Patient] ---(takes)---> [Penicillin]\n   |\n(treats)\n   v\n[Bacterial Infection]\n```",
+        "situation": "Patient takes penicillin to cure bacterial infections."
+      }
+    ]
+  },
+  {
+    "title": "Insulin",
+    "date": "1922",
+    "group": "Health",
+    "inventor": "Frederick Banting, Charles Best",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Insulin Injection) → Physiological Regulation",
+        "olog_diagram": "```\n[Diabetic Patient] ---(injects)---> [Insulin]\n   |\n(regulates)\n   v\n[Blood Sugar Levels]\n```",
+        "situation": "Diabetic patient injects insulin to manage blood sugar levels."
+      }
+    ]
+  },
+  {
+    "title": "Television",
+    "date": "1927",
+    "group": "Entertainment",
+    "inventor": "Philo Farnsworth, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Television) → Visual Environment",
+        "olog_diagram": "```\n[Television] ---(broadcasts)---> [Visual Content]\n```",
+        "situation": "TV broadcasts provide entertainment quietly in households."
+      }
+    ]
+  },
+  {
+    "title": "LSD",
+    "date": "1938",
+    "group": "Health",
+    "inventor": "Albert Hofmann",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (LSD) → Altered Consciousness",
+        "olog_diagram": "```\n[User] ---(ingests)---> [LSD]\n   |\n(experiences)\n   v\n[Altered Perception]\n```",
+        "situation": "User ingests LSD to experience altered perceptions."
+      }
+    ]
+  },
+  {
+    "title": "Atomic Bomb",
+    "date": "1945",
+    "group": "Military",
+    "inventor": "J. Robert Oppenheimer, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Atomic Bomb) → Geopolitical Impact",
+        "olog_diagram": "```\n[Atomic Bomb] ---(affects)---> [International Relations]\n```",
+        "situation": "The bomb affects international relations silently."
+      }
+    ]
+  },
+  {
+    "title": "Semiconductors",
+    "date": "1947",
+    "group": "Computing",
+    "inventor": "John Bardeen, Walter Brattain, William Shockley",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Semiconductors) → Electronic Devices",
+        "olog_diagram": "```\n[Semiconductors] ---(enable)---> [Electronic Functionality]\n```",
+        "situation": "Semiconductors enable functioning of gadgets silently."
+      }
+    ]
+  },
+  {
+    "title": "Fracking",
+    "date": "1947",
+    "group": "Energy",
+    "inventor": "Stanley Hart, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Fracking) → Energy Supply",
+        "olog_diagram": "```\n[Fracking] ---(increases)---> [Oil/Gas Production]\n   |\n(impacts)\n   v\n[Energy Markets]\n```",
+        "situation": "Fracking increases oil and gas production silently."
+      }
+    ]
+  },
+  {
+    "title": "Disposable Diapers",
+    "date": "1940s",
+    "group": "Domestic",
+    "inventor": "Victor Mills",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Diapers) → Childcare",
+        "olog_diagram": "```\n[Diapers] ---(manage)---> [Infant Waste]\n```",
+        "situation": "Diapers manage waste seamlessly during baby care."
+      }
+    ]
+  },
+  {
+    "title": "Barcodes",
+    "date": "1952",
+    "group": "Commerce",
+    "inventor": "Norman Joseph Woodland, Bernard Silver",
+    "don_ihde_categories": "Background Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Barcodes) → Commerce",
+        "olog_diagram": "```\n[Barcodes] ---(streamline)---> [Retail Transactions]\n```",
+        "situation": "Barcodes streamline checkout processes unobtrusively."
+      },
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Scanner) → Product Information",
+        "olog_diagram": "```\n[Cashier] ---(scans)---> [Barcode]\n   |\n(retrieves)\n   v\n[Product Details]\n```",
+        "situation": "Cashier scans barcode to retrieve product details."
+      }
+    ]
+  },
+  {
+    "title": "Shipping Containers",
+    "date": "1956",
+    "group": "Transportation",
+    "inventor": "Malcolm McLean",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Containers) → Global Trade",
+        "olog_diagram": "```\n[Shipping Containers] ---(transport)---> [Goods Efficiently]\n```",
+        "situation": "Containers transport goods efficiently without user focus."
+      }
+    ]
+  },
+  {
+    "title": "Seatbelts",
+    "date": "1959",
+    "group": "Safety",
+    "inventor": "Nils Bohlin",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Seatbelt) → Safety in Vehicles",
+        "olog_diagram": "```\n[Seatbelt] ---(provides)---> [Occupant Protection]\n```",
+        "situation": "Seatbelt protects occupants without active attention."
+      }
+    ]
+  },
+  {
+    "title": "The Pill",
+    "date": "1960",
+    "group": "Health",
+    "inventor": "Carl Djerassi, others",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Pill) → Contraceptive Control",
+        "olog_diagram": "```\n[User] ---(takes)---> [Contraceptive Pill]\n   |\n(prevents)\n   v\n[Pregnancy]\n```",
+        "situation": "User takes the pill to prevent pregnancy."
+      }
+    ]
+  },
+  {
+    "title": "Ibuprofen",
+    "date": "1961",
+    "group": "Health",
+    "inventor": "Stewart Adams, John Nicholson",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Ibuprofen) → Pain Relief",
+        "olog_diagram": "```\n[User] ---(ingests)---> [Ibuprofen]\n   |\n(alleviates)\n   v\n[Pain]\n```",
+        "situation": "User takes ibuprofen to alleviate headaches."
+      }
+    ]
+  },
+  {
+    "title": "Calculators",
+    "date": "1960s",
+    "group": "Computing",
+    "inventor": "Jack Kilby, others",
+    "don_ihde_categories": "Hermeneutic Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Calculator Display) → Mathematical World",
+        "olog_diagram": "```\n[Student] ---(reads)---> [Calculator Display]\n   |\n(understands)\n   v\n[Math Concepts]\n```",
+        "situation": "Student interprets results from a calculator to understand math."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Calculator",
+        "olog_diagram": "```\n[Engineer] <---(programs)---> [Advanced Calculator]\n```",
+        "situation": "Engineer interacts with an advanced calculator for computations."
+      }
+    ]
+  },
+  {
+    "title": "Databases",
+    "date": "1960s",
+    "group": "Computing",
+    "inventor": "Charles Bachman, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Database) → Data Management",
+        "olog_diagram": "```\n[Database] ---(stores)---> [Data]\n   |\n(supports)\n   v\n[Applications]\n```",
+        "situation": "Databases manage data supporting applications silently."
+      }
+    ]
+  },
+  {
+    "title": "Email",
+    "date": "1971",
+    "group": "Communication",
+    "inventor": "Ray Tomlinson",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Email Systems",
+        "olog_diagram": "```\n[User] <---(sends/receives)---> [Email]\n```",
+        "situation": "Users communicate by sending and receiving emails."
+      }
+    ]
+  },
+  {
+    "title": "GPS",
+    "date": "1973",
+    "group": "Navigation",
+    "inventor": "U.S. Department of Defense",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (GPS Display) → Location Interpretation",
+        "olog_diagram": "```\n[Driver] ---(reads)---> [GPS Device]\n   |\n(navigates)\n   v\n[Route]\n```",
+        "situation": "Driver uses GPS for navigation directions."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (GPS Infrastructure) → Global Navigation",
+        "olog_diagram": "```\n[GPS Satellites] ---(enable)---> [Location Services]\n```",
+        "situation": "GPS satellites enable location services silently."
+      }
+    ]
+  },
+  {
+    "title": "Dolby Surround Sound",
+    "date": "1975",
+    "group": "Entertainment",
+    "inventor": "Ray Dolby",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Dolby Sound) → Audio Experience",
+        "olog_diagram": "```\n[Dolby Technology] ---(enhances)---> [Audio Quality]\n```",
+        "situation": "Enhanced audio plays during movies without active attention."
+      }
+    ]
+  },
+  {
+    "title": "IVF (In Vitro Fertilization)",
+    "date": "1978",
+    "group": "Health",
+    "inventor": "Patrick Steptoe, Robert Edwards",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (IVF) → Reproductive Assistance",
+        "olog_diagram": "```\n[IVF Procedure] ---(assists)---> [Conception]\n```",
+        "situation": "IVF enables conception, affecting family planning silently."
+      }
+    ]
+  },
+  {
+    "title": "Walkman",
+    "date": "1979",
+    "group": "Entertainment",
+    "inventor": "Sony (Masaru Ibuka, Akio Morita)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Walkman) → Portable Music Experience",
+        "olog_diagram": "```\n[User] ---(listens to)---> [Walkman]\n   |\n(experiences)\n   v\n[Music On-the-Go]\n```",
+        "situation": "User listens to music on-the-go using the Walkman."
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Excel",
+    "date": "1985",
+    "group": "Computing",
+    "inventor": "Microsoft",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Excel Spreadsheets) → Data Interpretation",
+        "olog_diagram": "```\n[Analyst] ---(uses)---> [Excel]\n   |\n(interprets)\n   v\n[Financial Data]\n```",
+        "situation": "Analyst uses Excel to visualize and interpret data."
+      }
+    ]
+  },
+  {
+    "title": "World Wide Web",
+    "date": "1989",
+    "group": "Communication",
+    "inventor": "Tim Berners-Lee",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Web Content) → Information Access",
+        "olog_diagram": "```\n[User] ---(browses)---> [Web Pages]\n   |\n(accesses)\n   v\n[Information]\n```",
+        "situation": "User browses websites to gather information."
+      }
+    ]
+  },
+  {
+    "title": "Linux",
+    "date": "1991",
+    "group": "Computing",
+    "inventor": "Linus Torvalds",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Linux OS) → Computing Tasks",
+        "olog_diagram": "```\n[Linux OS] ---(runs)---> [Applications]\n```",
+        "situation": "Users run applications seamlessly on the Linux operating system."
+      }
+    ]
+  },
+  {
+    "title": "Doom (Video Game)",
+    "date": "1993",
+    "group": "Entertainment",
+    "inventor": "id Software",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Doom Game",
+        "olog_diagram": "```\n[Player] <---(interacts)---> [Game Environment]\n```",
+        "situation": "Player engages with the game environment responding to actions."
+      }
+    ]
+  },
+  {
+    "title": "eBay",
+    "date": "1995",
+    "group": "Commerce",
+    "inventor": "Pierre Omidyar",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ eBay Platform",
+        "olog_diagram": "```\n[Buyer/Seller] <---(transacts)---> [eBay Marketplace]\n```",
+        "situation": "Buyers and sellers interact through auctions and sales."
+      }
+    ]
+  },
+  {
+    "title": "Dolly the Sheep",
+    "date": "1996",
+    "group": "Biotechnology",
+    "inventor": "Ian Wilmut, Keith Campbell",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Dolly) → Cloning Technology",
+        "olog_diagram": "```\n[Dolly the Sheep] ---(advances)---> [Cloning Research]\n```",
+        "situation": "Dolly's existence advances cloning research without direct interaction."
+      }
+    ]
+  },
+  {
+    "title": "Netflix",
+    "date": "1997",
+    "group": "Entertainment",
+    "inventor": "Reed Hastings, Marc Randolph",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Netflix Content) → Entertainment Interpretation",
+        "olog_diagram": "```\n[Viewer] ---(watches)---> [Netflix Shows]\n   |\n(interprets)\n   v\n[Entertainment]\n```",
+        "situation": "Viewer selects and interprets streaming shows."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Netflix) → Viewing Habits",
+        "olog_diagram": "```\n[Netflix Algorithms] ---(influence)---> [User Choices]\n```",
+        "situation": "Netflix algorithms influence viewing choices silently."
+      }
+    ]
+  },
+  {
+    "title": "AOL Instant Messenger (AIM)",
+    "date": "1997",
+    "group": "Communication",
+    "inventor": "AOL",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ AIM Platform",
+        "olog_diagram": "```\n[User] <---(chats with)---> [Contacts]\n```",
+        "situation": "Users exchange messages in real-time via AIM."
+      }
+    ]
+  },
+  {
+    "title": "WiFi",
+    "date": "1997",
+    "group": "Communication",
+    "inventor": "Vic Hayes, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (WiFi) → Digital Connectivity",
+        "olog_diagram": "```\n[WiFi Network] ---(provides)---> [Internet Access]\n```",
+        "situation": "WiFi enables internet access without active user focus."
+      }
+    ]
+  },
+  {
+    "title": "iMac",
+    "date": "1998",
+    "group": "Computing",
+    "inventor": "Apple Inc.",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (iMac) → Computing Integration",
+        "olog_diagram": "```\n[User] ---(interacts with)---> [iMac]\n   |\n(performs)\n   v\n[Creative Tasks]\n```",
+        "situation": "User interacts seamlessly with iMac for creative tasks."
+      }
+    ]
+  },
+  {
+    "title": "Napster",
+    "date": "1999",
+    "group": "Entertainment",
+    "inventor": "Shawn Fanning, Sean Parker",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Napster Platform",
+        "olog_diagram": "```\n[User] <---(shares/downloads)---> [Music Files]\n```",
+        "situation": "Users share and download music through the platform."
+      }
+    ]
+  },
+  {
+    "title": "Airplanes",
+    "date": "1903",
+    "group": "Transportation",
+    "inventor": "Wright Brothers",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Airplane) → Air Travel",
+        "olog_diagram": "```\n[Pilot] ---(operates)---> [Airplane]\n   |\n(enables)\n   v\n[Flight]\n```",
+        "situation": "A pilot operates an airplane to enable flight."
+      }
+    ]
+  },
+  {
+    "title": "AlphaFold",
+    "date": "2018",
+    "group": "Biotechnology",
+    "inventor": "DeepMind Technologies",
+    "don_ihde_categories": "Background Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (AlphaFold) → Protein Folding",
+        "olog_diagram": "```\n[AlphaFold] ---(predicts)---> [Protein Structures]\n```",
+        "situation": "AlphaFold predicts protein structures, advancing biology silently."
+      },
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (AlphaFold Data) → Biological Insight",
+        "olog_diagram": "```\n[Researcher] ---(analyzes)---> [AlphaFold Predictions]\n   |\n(gains)\n   v\n[Understanding]\n```",
+        "situation": "Researchers analyze predictions to understand biological processes."
+      }
+    ]
+  },
+  {
+    "title": "Amazon Prime",
+    "date": "2005",
+    "group": "Commerce",
+    "inventor": "Jeff Bezos",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Prime Service) → Shopping Experience",
+        "olog_diagram": "```\n[Amazon Prime] ---(enhances)---> [Shopping Convenience]\n```",
+        "situation": "Fast shipping improves shopping without active focus."
+      }
+    ]
+  },
+  {
+    "title": "Bitcoin",
+    "date": "2009",
+    "group": "Finance",
+    "inventor": "Satoshi Nakamoto (pseudonym)",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Bitcoin Wallet) → Digital Currency",
+        "olog_diagram": "```\n[User] ---(manages)---> [Bitcoin Wallet]\n   |\n(transacts)\n   v\n[Cryptocurrency]\n```",
+        "situation": "Users manage and transact with Bitcoin."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Blockchain) → Financial Systems",
+        "olog_diagram": "```\n[Blockchain] ---(supports)---> [Bitcoin Transactions]\n```",
+        "situation": "Blockchain operates silently to enable transactions."
+      }
+    ]
+  },
+  {
+    "title": "CRISPR",
+    "date": "2012",
+    "group": "Biotechnology",
+    "inventor": "Jennifer Doudna, Emmanuelle Charpentier",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (CRISPR) → Gene Editing",
+        "olog_diagram": "```\n[CRISPR Technology] ---(modifies)---> [Genes]\n```",
+        "situation": "CRISPR allows scientists to edit genes silently impacting genetics."
+      }
+    ]
+  },
+  {
+    "title": "Corrective Lenses",
+    "date": "13th Century",
+    "group": "Health",
+    "inventor": "Salvino D'Armate (attributed), others",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Glasses) → Enhanced Vision",
+        "olog_diagram": "```\n[Person] ---(wears)---> [Glasses]\n   |\n(improves)\n   v\n[Vision]\n```",
+        "situation": "A person wears glasses to see clearly."
+      }
+    ]
+  },
+  {
+    "title": "Drones",
+    "date": "1907",
+    "group": "Various (Military, Recreation, Delivery)",
+    "inventor": "Jacques and Louis Bréguet (early quadcopter), others",
+    "don_ihde_categories": "Embodiment Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Drone) → Extended Capabilities",
+        "olog_diagram": "```\n[Operator] ---(controls)---> [Drone]\n   |\n(extends)\n   v\n[Reach]\n```",
+        "situation": "A photographer uses a drone to capture aerial images."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Autonomous Drone",
+        "olog_diagram": "```\n[User] <---(interacts with)---> [Autonomous Drone]\n```",
+        "situation": "A drone performs tasks autonomously, interacting with its environment."
+      }
+    ]
+  },
+  {
+    "title": "Facebook News Feed",
+    "date": "2006",
+    "group": "Digital",
+    "inventor": "Facebook Inc.",
+    "don_ihde_categories": "Background Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (News Feed) → Content Consumption",
+        "olog_diagram": "```\n[News Feed Algorithm] ---(curates)---> [User Content]\n```",
+        "situation": "Algorithms curate content, influencing user experience silently."
+      },
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (News Feed) → Social Information",
+        "olog_diagram": "```\n[User] ---(interprets)---> [News Feed Posts]\n```",
+        "situation": "Users interpret posts from friends and pages."
+      }
+    ]
+  },
+  {
+    "title": "Fonts",
+    "date": "1440s",
+    "group": "Communication",
+    "inventor": "Johannes Gutenberg (development of movable type)",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Font Styles) → Text Interpretation",
+        "olog_diagram": "```\n[Reader] ---(perceives)---> [Font Styles]\n   |\n(interprets)\n   v\n[Text Meaning]\n```",
+        "situation": "The style and typeface affect how readers interpret written content."
+      }
+    ]
+  },
+  {
+    "title": "Grindr",
+    "date": "2009",
+    "group": "Digital",
+    "inventor": "Joel Simkhai",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Grindr App",
+        "olog_diagram": "```\n[User] <---(connects with)---> [Nearby Users]\n```",
+        "situation": "Users connect with others through location-based matchmaking."
+      }
+    ]
+  },
+  {
+    "title": "Haber-Bosch Process",
+    "date": "1909",
+    "group": "Agriculture",
+    "inventor": "Fritz Haber, Carl Bosch",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Haber-Bosch Process) → Fertilizer Production",
+        "olog_diagram": "```\n[Haber-Bosch Process] ---(produces)---> [Ammonia]\n   |\n(used in)\n   v\n[Fertilizers]\n```",
+        "situation": "The process produces ammonia for fertilizers, enhancing crop yields silently."
+      }
+    ]
+  },
+  {
+    "title": "Juul",
+    "date": "2015",
+    "group": "Health",
+    "inventor": "James Monsees, Adam Bowen",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Juul Device) → Nicotine Intake",
+        "olog_diagram": "```\n[User] ---(inhales from)---> [Juul]\n   |\n(consumes)\n   v\n[Nicotine]\n```",
+        "situation": "A person uses a Juul device to consume nicotine vapor."
+      }
+    ]
+  },
+  {
+    "title": "KitchenAid Stand Mixer",
+    "date": "1919",
+    "group": "Domestic",
+    "inventor": "The KitchenAid Company",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Stand Mixer) → Cooking Aid",
+        "olog_diagram": "```\n[Chef] ---(uses)---> [Stand Mixer]\n   |\n(enhances)\n   v\n[Cooking Efficiency]\n```",
+        "situation": "A chef uses the mixer to prepare ingredients more efficiently."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Stand Mixer) → Kitchen Workflow",
+        "olog_diagram": "```\n[Stand Mixer] ---(operates in)---> [Kitchen]\n```",
+        "situation": "The mixer operates in the background, aiding in meal preparation."
+      }
+    ]
+  },
+  {
+    "title": "Microscopes",
+    "date": "1590s",
+    "group": "Science",
+    "inventor": "Zacharias Janssen (attributed), others",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Microscope) → Micro World",
+        "olog_diagram": "```\n[Scientist] ---(observes through)---> [Microscope]\n   |\n(reveals)\n   v\n[Microorganisms]\n```",
+        "situation": "A scientist observes microorganisms using a microscope."
+      }
+    ]
+  },
+  {
+    "title": "Motorola Razr",
+    "date": "2004",
+    "group": "Communication",
+    "inventor": "Motorola",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Razr Phone) → Communication",
+        "olog_diagram": "```\n[User] ---(uses)---> [Razr Phone]\n   |\n(engages in)\n   v\n[Calls/Texting]\n```",
+        "situation": "A user communicates using the Motorola Razr phone."
+      }
+    ]
+  },
+  {
+    "title": "MySpace",
+    "date": "2003",
+    "group": "Digital",
+    "inventor": "Tom Anderson, Chris DeWolfe",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Social Platform",
+        "olog_diagram": "```\n[User] <---(interacts with)---> [MySpace]\n```",
+        "situation": "Users create profiles and interact on MySpace."
+      }
+    ]
+  },
+  {
+    "title": "NFTs (Non-Fungible Tokens)",
+    "date": "2014",
+    "group": "Digital",
+    "inventor": "Kevin McCoy, Anil Dash",
+    "don_ihde_categories": "Hermeneutic Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (NFT) → Digital Ownership",
+        "olog_diagram": "```\n[Collector] ---(owns)---> [NFT]\n   |\n(verifies)\n   v\n[Authenticity]\n```",
+        "situation": "A collector purchases an NFT to own a unique digital asset."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Blockchain Platform",
+        "olog_diagram": "```\n[User] <---(interacts with)---> [Blockchain]\n```",
+        "situation": "Users interact with blockchain platforms to trade NFTs."
+      }
+    ]
+  },
+  {
+    "title": "OnlyFans",
+    "date": "2016",
+    "group": "Digital",
+    "inventor": "Tim Stokely",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Creator ↔ Subscribers",
+        "olog_diagram": "```\n[Content Creator] <---(provides content to)---> [Subscribers]\n```",
+        "situation": "Creators monetize exclusive content directly from subscribers."
+      }
+    ]
+  },
+  {
+    "title": "Oregon Trail (Video Game)",
+    "date": "1971",
+    "group": "Entertainment",
+    "inventor": "Don Rawitsch, Bill Heinemann, Paul Dillenberger",
+    "don_ihde_categories": "Alterity Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Game Interface",
+        "olog_diagram": "```\n[Player] <---(interacts with)---> [Game Environment]\n```",
+        "situation": "A player makes decisions affecting the game's outcome."
+      },
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Game Narrative) → Historical Understanding",
+        "olog_diagram": "```\n[Player] ---(experiences)---> [Game Narrative]\n   |\n(learns about)\n   v\n[History]\n```",
+        "situation": "The game educates players about 19th-century pioneer life."
+      }
+    ]
+  },
+  {
+    "title": "Ozempic",
+    "date": "2012",
+    "group": "Health",
+    "inventor": "Novo Nordisk",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Ozempic) → Blood Sugar Control",
+        "olog_diagram": "```\n[Patient] ---(injects)---> [Ozempic]\n   |\n(controls)\n   v\n[Blood Glucose Levels]\n```",
+        "situation": "A diabetic patient uses Ozempic to manage blood sugar."
+      }
+    ]
+  },
+  {
+    "title": "Patreon",
+    "date": "2013",
+    "group": "Digital",
+    "inventor": "Jack Conte, Sam Yam",
+    "don_ihde_categories": "Alterity Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Creator ↔ Patrons",
+        "olog_diagram": "```\n[Creator] <---(receives support from)---> [Patrons]\n```",
+        "situation": "Creators receive financial support directly from fans."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Patreon Platform) → Content Monetization",
+        "olog_diagram": "```\n[Patreon] ---(facilitates)---> [Funding Mechanism]\n```",
+        "situation": "The platform facilitates funding without interfering with content creation."
+      }
+    ]
+  },
+  {
+    "title": "Podcasts",
+    "date": "2004",
+    "group": "Entertainment",
+    "inventor": "Dave Winer, Adam Curry",
+    "don_ihde_categories": "Hermeneutic Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Podcast) → Information",
+        "olog_diagram": "```\n[Listener] ---(listens to)---> [Podcast]\n   |\n(gains)\n   v\n[Knowledge]\n```",
+        "situation": "A listener gains knowledge from educational podcasts."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Podcast Platform",
+        "olog_diagram": "```\n[Creator] <---(engages with)---> [Audience]\n```",
+        "situation": "Creators engage with audiences through podcasts."
+      }
+    ]
+  },
+  {
+    "title": "Printing Press",
+    "date": "1440",
+    "group": "Communication",
+    "inventor": "Johannes Gutenberg",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Printed Text) → Knowledge Dissemination",
+        "olog_diagram": "```\n[Reader] ---(reads)---> [Printed Material]\n   |\n(acquires)\n   v\n[Information]\n```",
+        "situation": "A reader accesses information through printed books."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Printing Press) → Spread of Ideas",
+        "olog_diagram": "```\n[Printing Press] ---(facilitates)---> [Mass Communication]\n```",
+        "situation": "The printing press enables widespread dissemination of ideas."
+      }
+    ]
+  },
+  {
+    "title": "Radio",
+    "date": "1890s",
+    "group": "Communication",
+    "inventor": "Guglielmo Marconi, Nikola Tesla (contributions)",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Radio Broadcast) → Information Reception",
+        "olog_diagram": "```\n[Listener] ---(listens to)---> [Radio Broadcast]\n   |\n(receives)\n   v\n[News and Entertainment]\n```",
+        "situation": "A person listens to radio broadcasts for news and entertainment."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Radio Waves) → Communication",
+        "olog_diagram": "```\n[Radio Waves] ---(transmit)---> [Signals]\n```",
+        "situation": "Radio waves transmit signals invisibly through the environment."
+      }
+    ]
+  },
+  {
+    "title": "Screws",
+    "date": "1st Century AD",
+    "group": "Construction",
+    "inventor": "Archimedes (concept), widespread use in Roman times",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Screw) → Fastening Objects",
+        "olog_diagram": "```\n[Builder] ---(uses)---> [Screw]\n   |\n(secures)\n   v\n[Materials]\n```",
+        "situation": "A carpenter uses screws to fasten pieces of wood together."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Screw) → Structural Integrity",
+        "olog_diagram": "```\n[Screws] ---(maintain)---> [Structure]\n```",
+        "situation": "Screws hold structures together without active user attention."
+      }
+    ]
+  },
+  {
+    "title": "Slack",
+    "date": "2013",
+    "group": "Communication",
+    "inventor": "Stewart Butterfield",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Slack Platform",
+        "olog_diagram": "```\n[Team Member] <---(collaborates in)---> [Channels]\n```",
+        "situation": "Teams communicate and collaborate via Slack channels."
+      }
+    ]
+  },
+  {
+    "title": "Snapchat",
+    "date": "2011",
+    "group": "Communication",
+    "inventor": "Evan Spiegel, Bobby Murphy, Reggie Brown",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Snapchat App",
+        "olog_diagram": "```\n[User] <---(shares)---> [Ephemeral Content]\n```",
+        "situation": "Users send disappearing messages and media."
+      }
+    ]
+  },
+  {
+    "title": "Spaceships",
+    "date": "1957",
+    "group": "Transportation",
+    "inventor": "Sergey Korolev, others",
+    "don_ihde_categories": "Embodiment Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Spaceship) → Space Exploration",
+        "olog_diagram": "```\n[Astronaut] ---(travels in)---> [Spaceship]\n   |\n(explores)\n   v\n[Space]\n```",
+        "situation": "An astronaut travels in a spaceship to explore space."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Spaceship Systems",
+        "olog_diagram": "```\n[Mission Control] <---(communicates with)---> [Spaceship]\n```",
+        "situation": "Mission control interacts with spaceship systems during a mission."
+      }
+    ]
+  },
+  {
+    "title": "Tesla",
+    "date": "2003",
+    "group": "Transportation",
+    "inventor": "Martin Eberhard, Marc Tarpenning, Elon Musk (joined later)",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Tesla Vehicle) → Electric Mobility",
+        "olog_diagram": "```\n[Driver] ---(operates)---> [Tesla Car]\n   |\n(experiences)\n   v\n[Electric Driving]\n```",
+        "situation": "A driver operates a Tesla car, experiencing electric mobility."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Tesla Infrastructure) → Energy Consumption",
+        "olog_diagram": "```\n[Charging Stations] ---(support)---> [Electric Vehicles]\n```",
+        "situation": "Charging stations support EVs without user focus."
+      }
+    ]
+  },
+  {
+    "title": "Transformers (AI)",
+    "date": "2017",
+    "group": "Computing",
+    "inventor": "Ashish Vaswani, Noam Shazeer, others",
+    "don_ihde_categories": "Background Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (AI Models) → Enhanced Computing",
+        "olog_diagram": "```\n[Transformers] ---(power)---> [AI Applications]\n```",
+        "situation": "Transformer models improve AI tasks silently."
+      },
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (AI Output) → Interpretation",
+        "olog_diagram": "```\n[User] ---(interprets)---> [AI-Generated Content]\n```",
+        "situation": "Users interpret content generated by AI."
+      }
+    ]
+  },
+  {
+    "title": "Tumblr",
+    "date": "2007",
+    "group": "Digital",
+    "inventor": "David Karp",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Blogging Platform",
+        "olog_diagram": "```\n[Blogger] <---(posts)---> [Tumblr]\n```",
+        "situation": "Users share multimedia content on personal blogs."
+      }
+    ]
+  },
+  {
+    "title": "Twitter",
+    "date": "2006",
+    "group": "Communication",
+    "inventor": "Jack Dorsey, Biz Stone, Evan Williams",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Twitter Platform",
+        "olog_diagram": "```\n[User] <---(tweets/retweets)---> [Twitter]\n```",
+        "situation": "Users share and interact through short messages."
+      }
+    ]
+  },
+  {
+    "title": "Uber",
+    "date": "2009",
+    "group": "Transportation",
+    "inventor": "Travis Kalanick, Garrett Camp",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Uber App",
+        "olog_diagram": "```\n[Rider] <---(requests)---> [Driver]\n```",
+        "situation": "A rider requests a ride through the app."
+      }
+    ]
+  },
+  {
+    "title": "Vine",
+    "date": "2013",
+    "group": "Entertainment",
+    "inventor": "Dom Hofmann, Rus Yusupov, Colin Kroll",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Vine Platform",
+        "olog_diagram": "```\n[User] <---(creates/shares)---> [Short Videos]\n```",
+        "situation": "Users create and share 6-second looping videos on Vine."
+      }
+    ]
+  },
+  {
+    "title": "Waymo",
+    "date": "2009",
+    "group": "Transportation",
+    "inventor": "Google (now Alphabet Inc.)",
+    "don_ihde_categories": "Alterity Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Autonomous Vehicle",
+        "olog_diagram": "```\n[Passenger] <---(rides in)---> [Self-Driving Car]\n```",
+        "situation": "Passengers ride in autonomous vehicles without driving."
+      },
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Waymo Tech) → Transportation",
+        "olog_diagram": "```\n[Waymo Technology] ---(operates)---> [Vehicle Autonomy]\n```",
+        "situation": "Autonomous systems operate silently to navigate roads."
+      }
+    ]
+  },
+  {
+    "title": "YouTube",
+    "date": "2005",
+    "group": "Entertainment",
+    "inventor": "Steve Chen, Chad Hurley, Jawed Karim",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Video Content) → Understanding",
+        "olog_diagram": "```\n[Viewer] ---(watches)---> [YouTube Videos]\n   |\n(learns)\n   v\n[Content]\n```",
+        "situation": "A viewer learns new skills by watching tutorials."
+      }
+    ]
+  },
+  {
+    "title": "Zoom",
+    "date": "2011",
+    "group": "Communication",
+    "inventor": "Eric Yuan",
+    "don_ihde_categories": "Hermeneutic Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Video Interface) → Communication",
+        "olog_diagram": "```\n[User] ---(sees/hears)---> [Other Participants]\n   |\n(communicates)\n   v\n[Meetings]\n```",
+        "situation": "Users participate in virtual meetings via Zoom."
+      },
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Zoom Platform",
+        "olog_diagram": "```\n[Host] <---(manages)---> [Meeting Settings]\n```",
+        "situation": "Hosts manage participants and settings during a Zoom call."
+      }
+    ]
+  }
+]

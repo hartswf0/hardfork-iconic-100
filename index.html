@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Tech Timeline</title>
+    <title>Upstream Tech Timeline</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <style>
         * {
@@ -25,10 +25,11 @@
         }
         #controls {
             display: flex;
+            flex-wrap: wrap;
             margin-bottom: 15px;
             gap: 10px;
         }
-        #search, #group-filter {
+        #search, #group-filter, #category-filter, #sort-options {
             background: black;
             color: green;
             border: 1px solid green;
@@ -52,19 +53,39 @@
         }
         .item-date {
             color: #FF0;
+            margin-right: 10px;
         }
         .item-group {
             color: #F0F;
         }
-        #loading {
-            text-align: center;
-            padding: 20px;
-            color: #0F0;
+        .item-details {
+            display: none;
+            background: rgba(0,255,0,0.05);
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px dashed #0F0;
         }
-        @media (max-width: 600px) {
-            #controls {
-                flex-direction: column;
-            }
+        .olog-diagram {
+            white-space: pre;
+            color: #0FF;
+            margin: 10px 0;
+            background: rgba(0,255,0,0.1);
+            border: 2px solid #0FF;
+            padding: 10px;
+            font-size: 1.1em;
+            max-width: 100%;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            line-height: 1.4;
+        }
+        .category-tag {
+            display: inline-block;
+            background: #0F0;
+            color: #000;
+            padding: 2px 5px;
+            margin: 2px;
+            border-radius: 3px;
+            font-size: 0.8em;
         }
     </style>
 </head>
@@ -75,192 +96,274 @@
             <select id="group-filter">
                 <option value="">ALL GROUPS</option>
             </select>
+            <select id="category-filter">
+                <option value="">ALL CATEGORIES</option>
+                <option value="Background Relations">Background Relations</option>
+                <option value="Embodiment Relations">Embodiment Relations</option>
+                <option value="Hermeneutic Relations">Hermeneutic Relations</option>
+                <option value="Alterity Relations">Alterity Relations</option>
+            </select>
+            <select id="sort-options">
+                <option value="default">DEFAULT SORT</option>
+                <option value="chronological">CHRONOLOGICAL</option>
+                <option value="reverse-chronological">REVERSE CHRONOLOGICAL</option>
+            </select>
         </div>
-        <div id="loading">LOADING TECHNOLOGIES...</div>
         <div id="timeline"></div>
     </div>
 
     <script>
-        const technologies = [
-            {"name": "Boats","date": "10,000 BC","group": "Transportation"},
-            {"name": "Calculators","date": "1960s","group": "Computing"},
-            {"name": "NFTs","date": "2014","group": "Digital"},
-            {"name": "Oregon Trail (Video Game)","date": "1971","group": "Entertainment"},
-            {"name": "Spinning Jenny","date": "1764","group": "Manufacturing"},
-            {"name": "Radio","date": "1890s","group": "Communication"},
-            {"name": "Vine","date": "2013","group": "Entertainment"},
-            {"name": "KitchenAid Stand Mixer","date": "1919","group": "Domestic"},
-            {"name": "Barcodes","date": "1952","group": "Commerce"},
-            {"name": "Drones","date": "1907","group": "Various"},
-            {"name": "Nintendo DS","date": "2004","group": "Entertainment"},
-            {"name": "Zoom","date": "2011","group": "Communication"},
-            {"name": "Sundial","date": "3500 BC","group": "Timekeeping"},
-            {"name": "Haber-Bosch Process","date": "1909","group": "Agriculture"},
-            {"name": "Linux","date": "1991","group": "Computing"},
-            {"name": "Podcasts","date": "2004","group": "Entertainment"},
-            {"name": "Fracking","date": "1947","group": "Energy"},
-            {"name": "Fonts","date": "1440s","group": "Digital"},
-            {"name": "Patreon","date": "2013","group": "Digital"},
-            {"name": "Concrete","date": "1824","group": "Construction"},
-            {"name": "Juul","date": "2015","group": "Health"},
-            {"name": "Anesthesia","date": "1846","group": "Health"},
-            {"name": "Netflix","date": "1997","group": "Entertainment"},
-            {"name": "Screws","date": "1st Century AD","group": "Construction"},
-            {"name": "Seatbelts","date": "1959","group": "Safety"},
-            {"name": "Disposable Diapers","date": "1940s","group": "Domestic"},
-            {"name": "Amazon Prime","date": "2005","group": "Commerce"},
-            {"name": "Microsoft Excel","date": "1985","group": "Computing"},
-            {"name": "Roads","date": "3000 BC","group": "Transportation"},
-            {"name": "Databases","date": "1960s","group": "Computing"},
-            {"name": "Insulin","date": "1922","group": "Health"},
-            {"name": "OnlyFans","date": "2016","group": "Digital"},
-            {"name": "Dolby Surround Sound","date": "1975","group": "Entertainment"},
-            {"name": "Doom (Video Game)","date": "1993","group": "Entertainment"},
-            {"name": "Ibuprofen","date": "1961","group": "Health"},
-            {"name": "Compass","date": "11th Century","group": "Navigation"},
-            {"name": "AOL Instant Messenger","date": "1997","group": "Communication"},
-            {"name": "GPS","date": "1973","group": "Navigation"},
-            {"name": "Compound Interest","date": "17th Century","group": "Finance"},
-            {"name": "Facebook News Feed","date": "2006","group": "Digital"},
-            {"name": "Dolly the Sheep","date": "1996","group": "Biotechnology"},
-            {"name": "Tesla","date": "2003","group": "Transportation"},
-            {"name": "Tumblr","date": "2007","group": "Digital"},
-            {"name": "Lever","date": "3rd Century BC","group": "Simple Machines"},
-            {"name": "Bitcoin","date": "2009","group": "Finance"},
-            {"name": "Motorola Razr","date": "2004","group": "Communication"},
-            {"name": "Gunpowder","date": "9th Century","group": "Military"},
-            {"name": "Snapchat","date": "2011","group": "Communication"},
-            {"name": "Condoms","date": "16th Century","group": "Health"},
-            {"name": "eBay","date": "1995","group": "Commerce"},
-            {"name": "Corrective Lenses","date": "13th Century","group": "Health"},
-            {"name": "Slack","date": "2013","group": "Communication"},
-            {"name": "IVF","date": "1978","group": "Health"},
-            {"name": "Shipping Containers","date": "1956","group": "Transportation"},
-            {"name": "TikTok","date": "2016","group": "Entertainment"},
-            {"name": "Light Bulb","date": "1879","group": "Domestic"},
-            {"name": "Microscopes","date": "1590s","group": "Science"},
-            {"name": "Washing Machines","date": "1797","group": "Domestic"},
-            {"name": "Elevators","date": "1852","group": "Construction"},
-            {"name": "Twitter","date": "2006","group": "Communication"},
-            {"name": "Refrigerator","date": "1748","group": "Domestic"},
-            {"name": "iMac","date": "1998","group": "Computing"},
-            {"name": "Napster","date": "1999","group": "Entertainment"},
-            {"name": "Money","date": "600 BC","group": "Finance"},
-            {"name": "Cotton Gin","date": "1793","group": "Agriculture"},
-            {"name": "Uber","date": "2009","group": "Transportation"},
-            {"name": "Fulcrum","date": "3rd Century BC","group": "Simple Machines"},
-            {"name": "Vaccines","date": "1796","group": "Health"},
-            {"name": "MySpace","date": "2003","group": "Digital"},
-            {"name": "AlphaFold","date": "2018","group": "Biotechnology"},
-            {"name": "Ozempic","date": "2012","group": "Health"},
-            {"name": "Agriculture","date": "10,000 BC","group": "Agriculture"},
-            {"name": "Walkman","date": "1979","group": "Entertainment"},
-            {"name": "Cuneiform","date": "3200 BC","group": "Communication"},
-            {"name": "Spaceships","date": "1957","group": "Transportation"},
-            {"name": "CRISPR","date": "2012","group": "Biotechnology"},
-            {"name": "Combustion Engine","date": "1876","group": "Transportation"},
-            {"name": "Aqueducts","date": "7th Century BC","group": "Construction"},
-            {"name": "Grindr","date": "2009","group": "Digital"},
-            {"name": "Telephone","date": "1876","group": "Communication"},
-            {"name": "Semiconductors","date": "1947","group": "Computing"},
-            {"name": "Wheel","date": "3500 BC","group": "Simple Machines"},
-            {"name": "Waymo","date": "2009","group": "Transportation"},
-            {"name": "Indoor Plumbing","date": "1800s","group": "Domestic"},
-            {"name": "WiFi","date": "1997","group": "Communication"},
-            {"name": "LSD","date": "1938","group": "Health"},
-            {"name": "World Wide Web","date": "1989","group": "Communication"},
-            {"name": "Batteries","date": "1800","group": "Energy"},
-            {"name": "The Pill","date": "1960","group": "Health"},
-            {"name": "Email","date": "1971","group": "Communication"},
-            {"name": "Transformers (AI)","date": "2017","group": "Computing"},
-            {"name": "Atomic Bomb","date": "1945","group": "Military"},
-            {"name": "YouTube","date": "2005","group": "Entertainment"},
-            {"name": "Airplanes","date": "1903","group": "Transportation"},
-            {"name": "Television","date": "1927","group": "Entertainment"},
-            {"name": "Penicillin","date": "1928","group": "Health"},
-            {"name": "Printing Press","date": "1440","group": "Communication"},
-            {"name": "iPhone","date": "2007","group": "Communication"},
-            {"name": "Electricity","date": "1800s","group": "Energy"},
-            {"name": "Fire","date": "1,000,000 BC","group": "Foundational"}
-        ];
+        // Load technologies from JSON
+        fetch('upstream_running.json')
+            .then(response => response.json())
+            .then(technologies => {
+                // Prepare technologies array in the format we need
+                const processedTechs = technologies.map(tech => ({
+                    name: tech.title,
+                    date: tech.date,
+                    group: tech.group,
+                    inventor: tech.inventor,
+                    categories: tech.don_ihde_categories ? tech.don_ihde_categories.split(', ') : [],
+                    details: tech.diagrams
+                }));
 
-        // Enhanced date parsing function
-        function parseDate(dateStr) {
-            const cleanDate = dateStr.replace(/,/g, '').replace(/\s*BC/g, '');
-            
-            // Handle special cases
-            if (cleanDate.includes('Century')) {
-                const century = parseInt(cleanDate.split(' ')[0]);
-                return century * 100 - 50;  // Middle of the century
-            }
-            
-            if (cleanDate.includes('s')) {
-                const decade = parseInt(cleanDate.replace('s', ''));
-                return decade + 5;  // Middle of the decade
-            }
-            
-            // Try parsing as a year or BC date
-            const numericValue = parseInt(cleanDate);
-            return numericValue < 0 ? numericValue : (numericValue || 0);
-        }
+                // Populate group filter
+                const groups = [...new Set(processedTechs.map(t => t.group))];
+                const groupFilter = document.getElementById('group-filter');
+                groups.forEach(group => {
+                    const option = document.createElement('option');
+                    option.value = group;
+                    option.textContent = group.toUpperCase();
+                    groupFilter.appendChild(option);
+                });
 
-        // Setup DOM elements
-        const timeline = document.getElementById('timeline');
-        const searchInput = document.getElementById('search');
-        const groupFilter = document.getElementById('group-filter');
-        const loadingIndicator = document.getElementById('loading');
+                // Comprehensive date parsing function
+                function parseDate(dateStr) {
+                    // STRONG ASSERTION for Fire's date
+                    if (dateStr === "1,000,000 BC") {
+                        console.error("STRONG ASSERTION: Forcing Fire date to -100000");
+                        return -100000;
+                    }
 
-        // Populate group filter
-        const groups = [...new Set(technologies.map(tech => tech.group))].sort();
-        groups.forEach(group => {
-            const option = document.createElement('option');
-            option.value = group;
-            option.textContent = group.toUpperCase();
-            groupFilter.appendChild(option);
-        });
+                    if (!dateStr) return 0;
+                    
+                    // Normalize the date string
+                    dateStr = dateStr.trim().toLowerCase()
+                        .replace(/^the\s+/i, '')  // Remove leading "the"
+                        .replace(/\s*ad\s*/i, '')  // Remove AD
+                        .replace(/\s*bc\s*/i, ' BC');
+                    
+                    // Specific mapping for historical periods
+                    const periodMap = {
+                        'prehistory': -1000000,
+                        'stone age': -10000,
+                        'bronze age': -3300,
+                        'iron age': -1200,
+                        'classical antiquity': -500,
+                        'middle ages': 500,
+                        'renaissance': 1400,
+                        'industrial revolution': 1760,
+                        'modern era': 1900,
+                        'information age': 1970
+                    };
+                    
+                    // Check for mapped periods first
+                    for (let [key, value] of Object.entries(periodMap)) {
+                        if (dateStr.includes(key)) return value;
+                    }
+                    
+                    // Handle BC dates with more precision
+                    const bcMatch = dateStr.match(/(\d+(?:,\d+)?)\s*BC/i);
+                    if (bcMatch) {
+                        const year = parseInt(bcMatch[1].replace(/,/g, ''));
+                        console.log(`BC date parsed: "${dateStr}" -> -${year}`);
+                        
+                        // Special handling for extremely large BC dates
+                        if (year > 100000) {
+                            // Use a logarithmic scale for very large numbers
+                            return -Math.round(Math.log10(year) * 100000);
+                        }
+                        
+                        return -year;
+                    }
+                    
+                    // Handle Century dates
+                    const centuryMatch = dateStr.match(/(\d+)(?:st|nd|rd|th)\s*century/i);
+                    if (centuryMatch) {
+                        const century = parseInt(centuryMatch[1]);
+                        // Use the middle of the century
+                        return -(century * 100 - 50);
+                    }
+                    
+                    // Handle decades (e.g., 1800s, 1440s)
+                    const decadeMatch = dateStr.match(/(\d+)s/);
+                    if (decadeMatch) {
+                        const decade = parseInt(decadeMatch[1]);
+                        return decade;
+                    }
+                    
+                    // Handle specific years
+                    const yearMatch = dateStr.match(/\b(\d{3,4})\b/);
+                    if (yearMatch) {
+                        return parseInt(yearMatch[1]);
+                    }
+                    
+                    // Fallback
+                    console.warn(`Unable to parse date: ${dateStr}`);
+                    return 0;
+                }
 
-        // Render technologies
-        function renderTechnologies(filteredTechs) {
-            timeline.innerHTML = '';
-            loadingIndicator.style.display = 'none';
+                // Render technologies
+                function renderTechnologies(techs, sortMethod = 'default') {
+                    const timeline = document.getElementById('timeline');
+                    timeline.innerHTML = '';
+                    
+                    // Sort technologies
+                    let sortedTechs = [...techs];
+                    
+                    // Logging for sorting
+                    console.log(`Sorting method: ${sortMethod}`);
+                    console.log('Unsorted technologies:');
+                    techs.forEach(tech => {
+                        const parsedDate = parseDate(tech.date);
+                        console.log(`- ${tech.name}: ${tech.date} (parsed: ${parsedDate})`);
+                    });
+                    
+                    switch(sortMethod) {
+                        case 'chronological':
+                            sortedTechs.sort((a, b) => {
+                                const dateA = parseDate(a.date);
+                                const dateB = parseDate(b.date);
+                                console.log(`Comparing: "${a.name}" (${a.date}, ${dateA}) vs "${b.name}" (${b.date}, ${dateB})`);
+                                return dateA - dateB;
+                            });
+                            console.log('Chronologically sorted technologies:');
+                            break;
+                        case 'reverse-chronological':
+                            sortedTechs.sort((a, b) => {
+                                const dateA = parseDate(a.date);
+                                const dateB = parseDate(b.date);
+                                console.log(`Comparing: "${a.name}" (${a.date}, ${dateA}) vs "${b.name}" (${b.date}, ${dateB})`);
+                                return dateB - dateA;
+                            });
+                            console.log('Reverse chronologically sorted technologies:');
+                            break;
+                        default:
+                            // Default sort remains unchanged
+                            break;
+                    }
+                    
+                    // Log sorted technologies with full details
+                    console.log("=== SORTED TECHNOLOGIES ===");
+                    sortedTechs.forEach((tech, index) => {
+                        const parsedDate = parseDate(tech.date);
+                        console.log(`${index + 1}. ${tech.name} (${tech.date}) → Parsed Date: ${parsedDate}`);
+                    });
+                    console.log("=== END OF SORTED TECHNOLOGIES ===");
 
-            filteredTechs.forEach(tech => {
-                const item = document.createElement('div');
-                item.className = 'item';
-                item.innerHTML = `
-                    <div class="item-name">[${tech.name}]</div>
-                    <div class="item-date">DATE: ${tech.date}</div>
-                    <div class="item-group">GROUP: ${tech.group.toUpperCase()}</div>
-                `;
-                timeline.appendChild(item);
+                    // Clean Olog diagram function
+                    function cleanOlogDiagram(diagram) {
+                        // Remove ``` if present
+                        return diagram.replace(/^```[\w]*\n?/, '')
+                                      .replace(/```\s*$/, '')
+                                      .trim();
+                    }
+
+                    sortedTechs.forEach(tech => {
+                        const item = document.createElement('div');
+                        item.classList.add('item');
+                        
+                        const header = document.createElement('div');
+                        header.innerHTML = `
+                            <span class="item-name">${tech.name}</span>
+                            <span class="item-date">${tech.date}</span>
+                            <span class="item-group">${tech.group}</span>
+                        `;
+                        
+                        // Add category tags
+                        if (tech.categories) {
+                            const categoryTags = tech.categories.map(cat => 
+                                `<span class="category-tag">${cat}</span>`
+                            ).join('');
+                            header.innerHTML += `<div class="category-tags">${categoryTags}</div>`;
+                        }
+                        
+                        item.appendChild(header);
+                        
+                        // Add details section
+                        const details = document.createElement('div');
+                        details.classList.add('item-details');
+                        
+                        if (tech.inventor) {
+                            details.innerHTML += `<p><strong>Inventor:</strong> ${tech.inventor}</p>`;
+                        }
+                        
+                        // Add diagrams
+                        if (tech.details) {
+                            tech.details.forEach(diagram => {
+                                details.innerHTML += `
+                                    <div>
+                                        <p><strong>Type:</strong> ${diagram.type}</p>
+                                        <p><strong>Base Diagram:</strong> ${diagram.base_diagram}</p>
+                                        ${diagram.olog_diagram ? 
+                                            `<p><strong>Olog Diagram:</strong></p>
+                                            <pre class="olog-diagram">${cleanOlogDiagram(diagram.olog_diagram)}</pre>` : ''}
+                                        ${diagram.situation ? 
+                                            `<p><strong>Situation:</strong> ${diagram.situation}</p>` : ''}
+                                    </div>
+                                `;
+                            });
+                        }
+                        
+                        item.appendChild(details);
+                        
+                        // Toggle details on click
+                        item.addEventListener('click', () => {
+                            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+                        });
+                        
+                        timeline.appendChild(item);
+                    });
+                }
+
+                // Initial render
+                renderTechnologies(processedTechs);
+
+                // Filter technologies
+                function filterTechnologies() {
+                    const searchTerm = document.getElementById('search').value.toLowerCase();
+                    const groupFilter = document.getElementById('group-filter').value;
+                    const categoryFilter = document.getElementById('category-filter').value;
+                    const sortOption = document.getElementById('sort-options').value;
+                    
+                    const filteredTechs = processedTechs.filter(tech => {
+                        const matchesSearch = tech.name.toLowerCase().includes(searchTerm) ||
+                                              tech.date.toLowerCase().includes(searchTerm) ||
+                                              tech.group.toLowerCase().includes(searchTerm);
+                        const matchesGroup = !groupFilter || tech.group === groupFilter;
+                        const matchesCategory = !categoryFilter || 
+                            tech.categories.includes(categoryFilter);
+                        
+                        return matchesSearch && matchesGroup && matchesCategory;
+                    });
+                    
+                    renderTechnologies(filteredTechs, sortOption);
+                }
+
+                // Event Listeners
+                document.getElementById('search').addEventListener('keyup', (e) => {
+                    if (e.key === 'Enter') filterTechnologies();
+                });
+                
+                document.getElementById('group-filter').addEventListener('change', filterTechnologies);
+                document.getElementById('category-filter').addEventListener('change', filterTechnologies);
+                document.getElementById('sort-options').addEventListener('change', filterTechnologies);
+            })
+            .catch(error => {
+                console.error('Error loading technologies:', error);
+                document.getElementById('timeline').innerHTML = 
+                    `<p style="color: red;">Error loading technologies: ${error.message}</p>`;
             });
-        }
-
-        // Filter technologies
-        function filterTechnologies() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const selectedGroup = groupFilter.value;
-
-            const filteredTechs = technologies.filter(tech => 
-                (tech.name.toLowerCase().includes(searchTerm) || 
-                 tech.group.toLowerCase().includes(searchTerm)) &&
-                (selectedGroup === '' || tech.group === selectedGroup)
-            ).sort((a, b) => parseDate(a.date) - parseDate(b.date));
-
-            renderTechnologies(filteredTechs);
-        }
-
-        // Event Listeners
-        searchInput.addEventListener('keyup', (e) => {
-            if (e.key === 'Enter') filterTechnologies();
-        });
-        groupFilter.addEventListener('change', filterTechnologies);
-
-        // Initial render
-        document.addEventListener('DOMContentLoaded', () => {
-            const sortedTechs = technologies.sort((a, b) => parseDate(a.date) - parseDate(b.date));
-            renderTechnologies(sortedTechs);
-        });
     </script>
 </body>
 </html>

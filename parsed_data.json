@@ -1,0 +1,902 @@
+[
+  {
+    "title": "Fire",
+    "date": "1,000,000 BC",
+    "group": "Foundational",
+    "inventor": "Early humans",
+    "don_ihde_categories": "Background Relations, Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Fire) → Environmental Control",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Boats",
+    "date": "10,000 BC",
+    "group": "Transportation",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Boat) → Navigation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Agriculture",
+    "date": "10,000 BC",
+    "group": "Agriculture",
+    "inventor": "Various early civilizations",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Agriculture) → Societal Development",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Sundial",
+    "date": "3500 BC",
+    "group": "Timekeeping",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Sundial Shadow) → Time Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Wheel",
+    "date": "3500 BC",
+    "group": "Simple Machines",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Wheel) → Enhanced Mobility",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Cuneiform",
+    "date": "3200 BC",
+    "group": "Communication",
+    "inventor": "Sumerian civilization",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Cuneiform Symbols) → Information Conveyance",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Roads",
+    "date": "3000 BC",
+    "group": "Transportation",
+    "inventor": "Various ancient civilizations",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Roads) → Transportation Networks",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Aqueducts",
+    "date": "7th Century BC",
+    "group": "Construction",
+    "inventor": "Romans",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Aqueducts) → Water Supply",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Money",
+    "date": "600 BC",
+    "group": "Finance",
+    "inventor": "Various ancient civilizations",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Money Symbols) → Value Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Fulcrum",
+    "date": "3rd Century BC",
+    "group": "Simple Machines",
+    "inventor": "Archimedes (attributed)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Fulcrum) → Lever Function",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Lever",
+    "date": "3rd Century BC",
+    "group": "Simple Machines",
+    "inventor": "Archimedes (attributed)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Lever) → Force Amplification",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Gunpowder",
+    "date": "9th Century",
+    "group": "Military",
+    "inventor": "Chinese inventors",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Gunpowder) → Warfare Evolution",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Compass",
+    "date": "11th Century",
+    "group": "Navigation",
+    "inventor": "Chinese inventors",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Compass Reading) → Direction Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Condoms",
+    "date": "16th Century",
+    "group": "Health",
+    "inventor": "Unknown",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Condom) → Protected Interaction",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Compound Interest",
+    "date": "17th Century",
+    "group": "Finance",
+    "inventor": "Jacob Bernoulli",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Interest Calculations) → Financial Growth",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Refrigerator",
+    "date": "1748",
+    "group": "Domestic",
+    "inventor": "William Cullen (concept), others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Refrigerator) → Food Preservation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Spinning Jenny",
+    "date": "1764",
+    "group": "Manufacturing",
+    "inventor": "James Hargreaves",
+    "don_ihde_categories": "Embodiment Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Spinning Jenny) → World",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Cotton Gin",
+    "date": "1793",
+    "group": "Agriculture",
+    "inventor": "Eli Whitney",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Cotton Gin) → Cotton Processing",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Vaccines",
+    "date": "1796",
+    "group": "Health",
+    "inventor": "Edward Jenner",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Vaccine) → Immunity",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Washing Machines",
+    "date": "1797",
+    "group": "Domestic",
+    "inventor": "Elias Howe, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Washing Machine) → Laundry Automation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Batteries",
+    "date": "1800",
+    "group": "Energy",
+    "inventor": "Alessandro Volta",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Battery) → Portable Power",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Indoor Plumbing",
+    "date": "1800s",
+    "group": "Domestic",
+    "inventor": "Various",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Plumbing) → Sanitation Services",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Electricity",
+    "date": "1800s",
+    "group": "Energy",
+    "inventor": "Various (e.g., Michael Faraday)",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Electricity) → Powered Infrastructure",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Concrete",
+    "date": "1824",
+    "group": "Construction",
+    "inventor": "Joseph Aspdin",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Concrete) → Built Environment",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Anesthesia",
+    "date": "1846",
+    "group": "Health",
+    "inventor": "William T.G. Morton",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Anesthesia) → Medical Procedures",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Elevators",
+    "date": "1852",
+    "group": "Construction",
+    "inventor": "Elisha Otis",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Elevator) → Vertical Transport",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Telephone",
+    "date": "1876",
+    "group": "Communication",
+    "inventor": "Alexander Graham Bell",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Telephone) → Voice Communication",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Combustion Engine",
+    "date": "1876",
+    "group": "Transportation",
+    "inventor": "Nikolaus Otto",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Combustion Engine) → Powered Vehicles",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Light Bulb",
+    "date": "1879",
+    "group": "Domestic",
+    "inventor": "Thomas Edison, Joseph Swan",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Light Bulb) → Illuminated Environment",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Penicillin",
+    "date": "1928",
+    "group": "Health",
+    "inventor": "Alexander Fleming",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Penicillin) → Infection Treatment",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Insulin",
+    "date": "1922",
+    "group": "Health",
+    "inventor": "Frederick Banting, Charles Best",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Insulin Injection) → Physiological Regulation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Television",
+    "date": "1927",
+    "group": "Entertainment",
+    "inventor": "Philo Farnsworth, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Television) → Visual Environment",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "LSD",
+    "date": "1938",
+    "group": "Health",
+    "inventor": "Albert Hofmann",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (LSD) → Altered Consciousness",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Atomic Bomb",
+    "date": "1945",
+    "group": "Military",
+    "inventor": "J. Robert Oppenheimer, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Atomic Bomb) → Geopolitical Impact",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Semiconductors",
+    "date": "1947",
+    "group": "Computing",
+    "inventor": "John Bardeen, Walter Brattain, William Shockley",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Semiconductors) → Electronic Devices",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Fracking",
+    "date": "1947",
+    "group": "Energy",
+    "inventor": "Stanley Hart, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Fracking) → Energy Supply",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Disposable Diapers",
+    "date": "1940s",
+    "group": "Domestic",
+    "inventor": "Victor Mills",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Diapers) → Childcare",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Barcodes",
+    "date": "1952",
+    "group": "Commerce",
+    "inventor": "Norman Joseph Woodland, Bernard Silver",
+    "don_ihde_categories": "Background Relations, Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Barcodes) → Commerce",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Shipping Containers",
+    "date": "1956",
+    "group": "Transportation",
+    "inventor": "Malcolm McLean",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Containers) → Global Trade",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Seatbelts",
+    "date": "1959",
+    "group": "Safety",
+    "inventor": "Nils Bohlin",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Seatbelt) → Safety in Vehicles",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "The Pill",
+    "date": "1960",
+    "group": "Health",
+    "inventor": "Carl Djerassi, others",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Pill) → Contraceptive Control",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Ibuprofen",
+    "date": "1961",
+    "group": "Health",
+    "inventor": "Stewart Adams, John Nicholson",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Ibuprofen) → Pain Relief",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Calculators",
+    "date": "1960s",
+    "group": "Computing",
+    "inventor": "Jack Kilby, others",
+    "don_ihde_categories": "Hermeneutic Relations, Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Calculator Display) → Mathematical World",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Databases",
+    "date": "1960s",
+    "group": "Computing",
+    "inventor": "Charles Bachman, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Database) → Data Management",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Email",
+    "date": "1971",
+    "group": "Communication",
+    "inventor": "Ray Tomlinson",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Email Systems",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "GPS",
+    "date": "1973",
+    "group": "Navigation",
+    "inventor": "U.S. Department of Defense",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (GPS Display) → Location Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Dolby Surround Sound",
+    "date": "1975",
+    "group": "Entertainment",
+    "inventor": "Ray Dolby",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Dolby Sound) → Audio Experience",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "IVF (In Vitro Fertilization)",
+    "date": "1978",
+    "group": "Health",
+    "inventor": "Patrick Steptoe, Robert Edwards",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (IVF) → Reproductive Assistance",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Walkman",
+    "date": "1979",
+    "group": "Entertainment",
+    "inventor": "Sony (Masaru Ibuka, Akio Morita)",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (Walkman) → Portable Music Experience",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Microsoft Excel",
+    "date": "1985",
+    "group": "Computing",
+    "inventor": "Microsoft",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Excel Spreadsheets) → Data Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "World Wide Web",
+    "date": "1989",
+    "group": "Communication",
+    "inventor": "Tim Berners-Lee",
+    "don_ihde_categories": "Hermeneutic Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Web Content) → Information Access",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Linux",
+    "date": "1991",
+    "group": "Computing",
+    "inventor": "Linus Torvalds",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Linux OS) → Computing Tasks",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Doom (Video Game)",
+    "date": "1993",
+    "group": "Entertainment",
+    "inventor": "id Software",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Doom Game",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "eBay",
+    "date": "1995",
+    "group": "Commerce",
+    "inventor": "Pierre Omidyar",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ eBay Platform",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Dolly the Sheep",
+    "date": "1996",
+    "group": "Biotechnology",
+    "inventor": "Ian Wilmut, Keith Campbell",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (Dolly) → Cloning Technology",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Netflix",
+    "date": "1997",
+    "group": "Entertainment",
+    "inventor": "Reed Hastings, Marc Randolph",
+    "don_ihde_categories": "Hermeneutic Relations, Background Relations",
+    "diagrams": [
+      {
+        "type": "Hermeneutic Relations",
+        "base_diagram": "Human → (Netflix Content) → Entertainment Interpretation",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "AOL Instant Messenger (AIM)",
+    "date": "1997",
+    "group": "Communication",
+    "inventor": "AOL",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ AIM Platform",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "WiFi",
+    "date": "1997",
+    "group": "Communication",
+    "inventor": "Vic Hayes, others",
+    "don_ihde_categories": "Background Relations",
+    "diagrams": [
+      {
+        "type": "Background Relations",
+        "base_diagram": "Human (WiFi) → Digital Connectivity",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "iMac",
+    "date": "1998",
+    "group": "Computing",
+    "inventor": "Apple Inc.",
+    "don_ihde_categories": "Embodiment Relations",
+    "diagrams": [
+      {
+        "type": "Embodiment Relations",
+        "base_diagram": "Human → (iMac) → Computing Integration",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  },
+  {
+    "title": "Napster",
+    "date": "1999",
+    "group": "Entertainment",
+    "inventor": "Shawn Fanning, Sean Parker",
+    "don_ihde_categories": "Alterity Relations",
+    "diagrams": [
+      {
+        "type": "Alterity Relations",
+        "base_diagram": "Human ↔ Napster Platform",
+        "olog_diagram": null,
+        "situation": null
+      }
+    ]
+  }
+]
